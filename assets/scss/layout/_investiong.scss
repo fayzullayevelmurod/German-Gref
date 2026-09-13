@@ -1,0 +1,145 @@
+// investing
+.investing {
+  padding: 60rem 0;
+
+  @include media('md') {
+    padding: 48rem 0;
+  }
+
+  &_head {
+    margin-bottom: 60rem;
+
+    @include media('md') {
+      margin-bottom: 32rem;
+    }
+  }
+
+  .title_icon {
+    background: #F5F6F8;
+    border: 1px solid #E2E4EB;
+    width: max-content;
+
+    li {
+      font-weight: 700;
+      font-size: 12rem;
+      line-height: 100%;
+      color: $color-blue;
+
+      @include media('md') {
+        font-size: 10rem;
+      }
+    }
+
+    .line {
+      width: 1rem;
+      height: 10rem;
+      background: #E2E4EB;
+    }
+  }
+
+  .section_title {
+    max-width: 800rem;
+    margin-top: 22rem;
+  }
+
+  &_in {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 32rem;
+
+    @include media('md') {
+      grid-template-columns: repeat(1,1fr);
+      gap: 12rem;
+    }
+  }
+
+  &_block {
+    border-radius: 16rem;
+    padding: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 24rem;
+    background: #F5F6F8;
+    border: 1px solid $color-blue;
+
+    @include media('md') {
+      border-radius: 12rem;
+      padding: 24rem;
+    }
+
+    &.white {
+      @include media('md') {
+        order: 1;
+      }
+    }
+
+    &.blue {
+      background: $color-blue;
+
+      h3 {
+        color: $color-white;
+      }
+
+      p {
+        color: #FFFFFFB2;
+      }
+    }
+
+    h3 {
+      font-weight: 800;
+      font-size: 24rem;
+      line-height: 100%;
+      color: $color-black-2;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16rem;
+      line-height: 150%;
+      color: #8E919A;
+    }
+  }
+
+  &_end {
+    padding: 48rem;
+    border-radius: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 32rem;
+    background: $color-blue;
+    margin-top: 60rem;
+
+    @include media('md') {
+      margin-top: 32rem;
+      padding: 24rem;
+      border-radius: 16rem;
+      gap: 16rem;
+    }
+
+    span {
+      font-weight: 800;
+      font-size: 96rem;
+      line-height: 10%;
+      transform: translateY(10rem);
+      color: #FFFFFF66;
+
+      @include media('md') {
+        font-size: 48rem;
+        line-height: 100%;
+        font-family: $font-Outfit;
+      }
+    }
+
+    p {
+      font-weight: 700;
+      font-size: 32rem;
+      line-height: 130%;
+      color: $color-white;
+
+      @include media('md') {
+        font-size: 20rem;
+      }
+    }
+  }
+}
+// investing

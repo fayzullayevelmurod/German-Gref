@@ -1106,6 +1106,143 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.investing {
+  padding: 60rem 0;
+}
+@media (max-width: 850px) {
+  .investing {
+    padding: 48rem 0;
+  }
+}
+.investing_head {
+  margin-bottom: 60rem;
+}
+@media (max-width: 850px) {
+  .investing_head {
+    margin-bottom: 32rem;
+  }
+}
+.investing .title_icon {
+  background: #F5F6F8;
+  border: 1px solid #E2E4EB;
+  width: -moz-max-content;
+  width: max-content;
+}
+.investing .title_icon li {
+  font-weight: 700;
+  font-size: 12rem;
+  line-height: 100%;
+  color: #3C3C8F;
+}
+@media (max-width: 850px) {
+  .investing .title_icon li {
+    font-size: 10rem;
+  }
+}
+.investing .title_icon .line {
+  width: 1rem;
+  height: 10rem;
+  background: #E2E4EB;
+}
+.investing .section_title {
+  max-width: 800rem;
+  margin-top: 22rem;
+}
+.investing_in {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32rem;
+}
+@media (max-width: 850px) {
+  .investing_in {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12rem;
+  }
+}
+.investing_block {
+  border-radius: 16rem;
+  padding: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
+  background: #F5F6F8;
+  border: 1px solid #3C3C8F;
+}
+@media (max-width: 850px) {
+  .investing_block {
+    border-radius: 12rem;
+    padding: 24rem;
+  }
+}
+@media (max-width: 850px) {
+  .investing_block.white {
+    order: 1;
+  }
+}
+.investing_block.blue {
+  background: #3C3C8F;
+}
+.investing_block.blue h3 {
+  color: #FFFFFF;
+}
+.investing_block.blue p {
+  color: rgba(255, 255, 255, 0.6980392157);
+}
+.investing_block h3 {
+  font-weight: 800;
+  font-size: 24rem;
+  line-height: 100%;
+  color: #1E1F22;
+}
+.investing_block p {
+  font-weight: 400;
+  font-size: 16rem;
+  line-height: 150%;
+  color: #8E919A;
+}
+.investing_end {
+  padding: 48rem;
+  border-radius: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 32rem;
+  background: #3C3C8F;
+  margin-top: 60rem;
+}
+@media (max-width: 850px) {
+  .investing_end {
+    margin-top: 32rem;
+    padding: 24rem;
+    border-radius: 16rem;
+    gap: 16rem;
+  }
+}
+.investing_end span {
+  font-weight: 800;
+  font-size: 96rem;
+  line-height: 10%;
+  transform: translateY(10rem);
+  color: rgba(255, 255, 255, 0.4);
+}
+@media (max-width: 850px) {
+  .investing_end span {
+    font-size: 48rem;
+    line-height: 100%;
+    font-family: "Outfit", sans-serif;
+  }
+}
+.investing_end p {
+  font-weight: 700;
+  font-size: 32rem;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+@media (max-width: 850px) {
+  .investing_end p {
+    font-size: 20rem;
+  }
+}
+
 .footer {
   border-top: 3px solid #8F8F8F;
   padding: 40rem 0;
