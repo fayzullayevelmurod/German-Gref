@@ -1,0 +1,174 @@
+// video
+.video {
+  padding: 100rem 0;
+  background: $color-black;
+
+  @include media('md') {
+    padding: 48rem 0;
+  }
+
+  &_head {
+    margin-bottom: 48rem;
+    position: relative;
+
+    @include media('md') {
+      margin-bottom: 24rem;
+    }
+
+    .title_icon {
+      background: #FFFFFF20;
+      border: 1px solid #FFFFFF40;
+
+      .icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      li, span {
+        color: $color-white;
+        font-weight: 600;
+        font-size: 11rem;
+        line-height: 100%;
+        text-transform: uppercase;
+      }
+
+      .line {
+        background: #FFFFFF40;
+      }
+    }
+
+    .section_title {
+      color: $color-white;
+      text-align: center;
+      margin: 48rem auto;
+      max-width: 790rem;
+
+      @include media('md') {
+        margin: 24rem 0;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 20rem;
+      line-height: 150%;
+      text-align: center;
+      color: $color-white;
+      max-width: 740rem;
+      margin: auto;
+
+      @include media('md') {
+        font-size: 12rem;
+      }
+    }
+  }
+
+  &_in {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24rem;
+
+    @include media('md') {
+      grid-template-columns: repeat(2,1fr);
+      gap: 16rem;
+    }
+
+    @include media('sm') {
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+
+  &_block {
+    border-radius: 20rem;
+    border: 1px solid #E2E8F0;
+    padding: 32rem;
+
+    @include media('md') {
+      padding: 16rem;
+      border-radius: 16rem;
+    }
+
+    &-img {
+      position: relative;
+      height: 160rem;
+      border-radius: 12rem;
+      overflow: hidden;
+      margin-bottom: 20rem;
+
+      @include media('md') {
+        height: 130rem;
+        margin-bottom: 12rem;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+      }
+
+      .play {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 44rem;
+        height: 44rem;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      gap: 8rem;
+
+      span {
+        font-weight: 700;
+        font-size: 14rem;
+        line-height: 100%;
+        color: $color-white;
+
+        @include media('md') {
+          font-size: 12rem;
+          opacity: 60%;
+        }
+      }
+
+      h3 {
+        font-weight: 800;
+        font-size: 18rem;
+        line-height: 100%;
+        color: $color-white;
+
+        @include media('md') {
+          font-size: 15rem;
+        }
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 14rem;
+        line-height: 150%;
+        color: $color-white;
+
+        @include media('md') {
+          font-size: 12rem;
+          opacity: 80%;
+        }
+      }
+    }
+  }
+}
+// video
