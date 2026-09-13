@@ -1,0 +1,223 @@
+// hero
+.hero {
+  padding: 60rem 0 80rem 0;
+  background: #EDEDF5;
+  overflow: hidden;
+
+  @include media('md') {
+    padding: 32rem 0 0 0;
+    min-height: 714rem;
+    position: relative;
+    overflow: visible;
+  }
+
+  .container {
+    position: relative;
+
+    @include media('md') {
+      position: static;
+    }
+
+    .circle {
+      position: absolute;
+      top: 136rem;
+      right: -180rem;
+      background: #3C3C8F4D;
+      filter: blur(115px);
+      width: 700rem;
+      height: 970rem;
+
+      @include media('md') {
+        width: 433rem;
+        height: 374rem;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+  }
+
+  .title_icon {
+    background: $color-blue;
+    height: 28rem;
+
+    @include media('md') {
+      background: #F5F6F8;
+      border: 1px solid #E2E4EB;
+    }
+
+    li,span {
+      color: $color-white;
+
+      @include media('md') {
+        color: $color-black-2;
+      }
+    }
+
+    .line {
+      background: #FFFFFF33;
+    }
+  }
+
+  .section_title {
+    font-size: 60rem;
+    text-transform: uppercase;
+    max-width: 770rem;
+    margin: 40rem 0 24rem 0;
+
+    @include media('md') {
+      font-size: 28rem;
+      margin: 24rem 0 12rem 0;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &_text {
+    max-width: 770rem;
+    font-weight: 400;
+    font-size: 20rem;
+    line-height: 150%;
+    color: $color-black-2;
+
+    @include media('md') {
+      font-size: 16rem;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &_form {
+    border-radius: 12rem;
+    border: 1px solid $color-blue;
+    padding: 24rem;
+    max-width: 640rem;
+    margin: 40rem 0 48rem 0;
+    position: relative;
+    z-index: 2;
+    background: #EDEDF5;
+
+    @include media('md') {
+      padding: 16rem;
+      width: calc(100% - 32rem);
+      position: absolute;
+      z-index: 2;
+      bottom: -140rem;
+      max-width: 100%;
+    }
+
+    h3 {
+      font-weight: 400;
+      font-size: 31rem;
+      line-height: 100%;
+      letter-spacing: -5%;
+      text-align: center;
+      color: $color-black;
+
+      @include media('md') {
+        display: none;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 18rem;
+      letter-spacing: -5%;
+      text-align: center;
+      color: #868686;
+      margin: 6rem 0 16rem 0;
+
+      @include media('md') {
+        display: none;
+      }
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 16rem;
+
+      @include media('md') {
+        gap: 12rem;
+        grid-template-columns: repeat(1,1fr);
+      }
+
+      input {
+        border: 1px solid $color-blue;
+        border-radius: 6rem;
+        background: $color-white;
+        font-weight: 500;
+        font-size: 16rem;
+        line-height: 100%;
+        color: #8E919A;
+        padding: 12rem 16rem;
+
+        &::placeholder {
+          color: #8E919A;
+        }
+
+        @include media('md') {
+          height: 42rem;
+          font-size: 14rem;
+        }
+      }
+
+      .btn-blue {
+        width: 100%;
+        height: 53rem;
+        grid-column: -1 / 1;
+
+        @include media('md') {
+          height: 50rem;
+        }
+      }
+    }
+
+  }
+
+  .text_end {
+    width: 100%;
+    padding: 24rem 40rem;
+    background: $color-white;
+    font-weight: 900;
+    font-size: 22rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: $color-black;
+    position: relative;
+    z-index: 3;
+
+    @include media('md') {
+      display: none;
+    }
+
+    svg {
+      position: absolute;
+      top: 0;
+      right: 40rem;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+
+  &_img {
+    position: absolute;
+    right: -330rem;
+    width: 1320rem;
+    height: 879rem;
+    object-fit: contain;
+    z-index: 2;
+
+    @include media('md') {
+      left: 50%;
+      right: 0;
+      transform: translateX(-50%);
+      bottom: -36rem;
+      min-width: 665rem;
+      height: 443rem;
+      margin: auto;
+    }
+  }
+}
+// hero

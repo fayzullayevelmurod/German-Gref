@@ -27,6 +27,7 @@
       flex-direction: column;
       width: 90%;
       height: 100%;
+      z-index: 5;
     }
 
     &.active {
@@ -55,6 +56,7 @@
       z-index: 2;
       margin: 20rem 20rem 40rem 20rem;
       width: calc(100% - 100rem);
+      z-index: 5;
     }
   }
 
