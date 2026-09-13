@@ -21,10 +21,59 @@ span, label {
 
 html {
   scroll-behavior: smooth;
+  font-size: 1px;
+
+  @media (max-width: 1850px) {
+    font-size: 0.95px;
+  }
+
+  @media (max-width: 1780px) {
+    font-size: 0.9px;
+  }
+
+  @media (max-width: 1680px) {
+    font-size: 0.85px;
+  }
+
+  @media (max-width: 1580px) {
+    font-size: 0.8px;
+  }
+
+  @media (max-width: 1480px) {
+    font-size: 0.75px;
+  }
+
+  @media (max-width: 1380px) {
+    font-size: 0.7px;
+  }
+
+  @media (max-width: 1330px) {
+    font-size: 0.65px;
+  }
+
+  @media (max-width: 1240px) {
+    font-size: 0.6px;
+  }
+
+  @media (max-width: 1140px) {
+    font-size: 0.55px;
+  }
+
+  @media (max-width: 1030px) {
+    font-size: 0.5px;
+  }
+
+  @media (max-width: 930px) {
+    font-size: 0.45px;
+  }
+
+  @media (max-width: 850px) {
+    font-size: 1px;
+  }
 }
 
 body {
-
+  font-family: $font-Geist;
   font-style: normal;
   font-display: swap;
 }
@@ -63,15 +112,11 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-  max-width: calc(1337px);
+  max-width: calc(1440px);
   margin: 0 auto;
+  padding: 0 80px;
 
-  @include media('lg') {
-    padding: 0 20px;
+  @include media('md') {
+    padding: 0 16px;
   }
-
-}
-
-.section-top {
-  margin-top: 160px;
 }
