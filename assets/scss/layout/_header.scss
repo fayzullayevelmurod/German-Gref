@@ -1,3 +1,81 @@
 .header {
-  
+  padding: 20rem 0;
+  border-bottom: 1px solid #E2E4EB;
+
+  @include media('md') {
+    padding: 16rem 0;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &_link {
+    display: flex;
+    align-items: center;
+    gap: 40rem;
+    transition: .3s ease;
+
+    @include media('md') {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      background: rgba(253, 251, 251, 1);
+      padding: 40rem 20rem;
+      flex-direction: column;
+      width: 90%;
+      height: 100%;
+    }
+
+    &.active {
+      left: 0;
+    }
+
+    a {
+      font-weight: 500;
+      font-size: 14rem;
+      line-height: 100%;
+      letter-spacing: -2%;
+      color: #1E1F22;
+
+      @include media('md') {
+        font-size: 24rem;
+      }
+    }
+  }
+
+  .btn-blue {
+    transition: .3s ease;
+    @include media('md') {
+      position: fixed;
+      bottom: 0;
+      left: -100%;
+      z-index: 2;
+      margin: 20rem 20rem 40rem 20rem;
+      width: calc(100% - 100rem);
+    }
+  }
+
+  .header_btn {
+    &.active {
+      left: 0;
+    }
+  }
+
+  .logo {
+    @include media('md') {
+      width: 120rem;
+      height: 18rem;
+    }
+  }
+
+  .burger {
+    display: none;
+
+    @include media('md') {
+      display: block;
+    }
+  }
 }

@@ -120,3 +120,27 @@ p, h1, h2, h3, h4, h5, h6 {
     padding: 0 16px;
   }
 }
+
+.btn-blue {
+  padding: 12rem 24rem;
+  font-family: Geist;
+  font-weight: 600;
+  font-size: 14rem;
+  line-height: 100%;
+  color: $color-white;
+  border-radius: 6rem;
+  background: $color-blue;
+}
+
+.section_title {
+  font-family: $font-Outfit;
+  font-weight: 800;
+  font-size: 56rem;
+  line-height: 110%;
+  letter-spacing: -150%;
+  color: $color-black;
+
+  span {
+    color: $color-blue;
+  }
+}

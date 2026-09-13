@@ -443,6 +443,107 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.btn-blue {
+  padding: 12rem 24rem;
+  font-family: Geist;
+  font-weight: 600;
+  font-size: 14rem;
+  line-height: 100%;
+  color: #FFFFFF;
+  border-radius: 6rem;
+  background: #3C3C8F;
+}
+
+.section_title {
+  font-family: "Outfit", sans-serif;
+  font-weight: 800;
+  font-size: 56rem;
+  line-height: 110%;
+  letter-spacing: -150%;
+  color: #000000;
+}
+.section_title span {
+  color: #3C3C8F;
+}
+
+.header {
+  padding: 20rem 0;
+  border-bottom: 1px solid #E2E4EB;
+}
+@media (max-width: 850px) {
+  .header {
+    padding: 16rem 0;
+  }
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_link {
+  display: flex;
+  align-items: center;
+  gap: 40rem;
+  transition: 0.3s ease;
+}
+@media (max-width: 850px) {
+  .header_link {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background: rgb(253, 251, 251);
+    padding: 40rem 20rem;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+  }
+}
+.header_link.active {
+  left: 0;
+}
+.header_link a {
+  font-weight: 500;
+  font-size: 14rem;
+  line-height: 100%;
+  letter-spacing: -2%;
+  color: #1E1F22;
+}
+@media (max-width: 850px) {
+  .header_link a {
+    font-size: 24rem;
+  }
+}
+.header .btn-blue {
+  transition: 0.3s ease;
+}
+@media (max-width: 850px) {
+  .header .btn-blue {
+    position: fixed;
+    bottom: 0;
+    left: -100%;
+    z-index: 2;
+    margin: 20rem 20rem 40rem 20rem;
+    width: calc(100% - 100rem);
+  }
+}
+.header .header_btn.active {
+  left: 0;
+}
+@media (max-width: 850px) {
+  .header .logo {
+    width: 120rem;
+    height: 18rem;
+  }
+}
+.header .burger {
+  display: none;
+}
+@media (max-width: 850px) {
+  .header .burger {
+    display: block;
+  }
+}
+
 .footer {
   border-top: 3px solid #8F8F8F;
   padding: 40rem 0;
