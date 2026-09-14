@@ -1,0 +1,139 @@
+// capital
+.capital {
+  padding: 60rem 0;
+
+  @include media('md') {
+    padding: 110rem 0 60rem 0;
+  }
+
+  .title_icon {
+    background: #F5F6F8;
+    border: 1px solid #E2E4EB;
+    width: max-content;
+
+    @include media('md') {
+      display: none;
+    }
+
+    li {
+      font-weight: 700;
+      font-size: 12rem;
+      line-height: 100%;
+      color: $color-blue;
+
+      @include media('md') {
+        font-size: 10rem;
+      }
+    }
+
+    .line {
+      width: 1rem;
+      height: 10rem;
+      background: #E2E4EB;
+    }
+
+    span {
+      color: $color-black-2;
+    }
+  }
+
+  &_in {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 64rem;
+    margin-top: 24rem;
+
+    @include media('md') {
+      flex-direction: column;
+      gap: 32rem;
+      margin-top: 0;
+    }
+  }
+
+  &_left {
+    max-width: 700rem;
+
+    @include media('md') {
+      max-width: 100%;
+    }
+
+    .section_title {
+      margin-bottom: 32rem;
+
+      @include media('md') {
+        margin-bottom: 24rem;
+      }
+
+      span {
+        display: inline;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 18rem;
+      line-height: 160%;
+      color: $color-black-2;
+
+      @include media('md') {
+        font-size: 14rem;
+      }
+    }
+  }
+
+  &_right {
+    background: $color-blue;
+    padding: 48rem;
+    border-radius: 20rem;
+    width: 520rem;
+
+    @include media('md') {
+      width: 100%;
+      padding: 24rem;
+      border-radius: 16rem;
+    }
+
+    h3 {
+      font-weight: 800;
+      font-size: 96rem;
+      line-height: 30%;
+      color: $color-white;
+      transform: translateY(15rem);
+
+      @include media('md') {
+        font-size: 48rem;
+        font-family: $font-Outfit;
+        opacity: 40%;
+      }
+    }
+
+    p {
+      font-weight: 700;
+      font-size: 24rem;
+      line-height: 135%;
+      color: $color-white;
+      padding-bottom: 32rem;
+      margin: 32rem 0;
+      border-bottom: 1px solid #E2E4EB;
+
+      @include media('md') {
+        font-size: 18rem;
+        margin: 24rem 0;
+        padding-bottom: 24rem;
+      }
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 14rem;
+      line-height: 100%;
+      color: $color-white;
+
+      @include media('md') {
+        font-size: 12rem;
+      }
+    }
+  }
+}
+// capital

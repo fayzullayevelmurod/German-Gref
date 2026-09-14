@@ -791,6 +791,143 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.capital {
+  padding: 60rem 0;
+}
+@media (max-width: 850px) {
+  .capital {
+    padding: 110rem 0 60rem 0;
+  }
+}
+.capital .title_icon {
+  background: #F5F6F8;
+  border: 1px solid #E2E4EB;
+  width: -moz-max-content;
+  width: max-content;
+}
+@media (max-width: 850px) {
+  .capital .title_icon {
+    display: none;
+  }
+}
+.capital .title_icon li {
+  font-weight: 700;
+  font-size: 12rem;
+  line-height: 100%;
+  color: #3C3C8F;
+}
+@media (max-width: 850px) {
+  .capital .title_icon li {
+    font-size: 10rem;
+  }
+}
+.capital .title_icon .line {
+  width: 1rem;
+  height: 10rem;
+  background: #E2E4EB;
+}
+.capital .title_icon span {
+  color: #1E1F22;
+}
+.capital_in {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 64rem;
+  margin-top: 24rem;
+}
+@media (max-width: 850px) {
+  .capital_in {
+    flex-direction: column;
+    gap: 32rem;
+    margin-top: 0;
+  }
+}
+.capital_left {
+  max-width: 700rem;
+}
+@media (max-width: 850px) {
+  .capital_left {
+    max-width: 100%;
+  }
+}
+.capital_left .section_title {
+  margin-bottom: 32rem;
+}
+@media (max-width: 850px) {
+  .capital_left .section_title {
+    margin-bottom: 24rem;
+  }
+}
+.capital_left .section_title span {
+  display: inline;
+}
+.capital_left p {
+  font-weight: 400;
+  font-size: 18rem;
+  line-height: 160%;
+  color: #1E1F22;
+}
+@media (max-width: 850px) {
+  .capital_left p {
+    font-size: 14rem;
+  }
+}
+.capital_right {
+  background: #3C3C8F;
+  padding: 48rem;
+  border-radius: 20rem;
+  width: 520rem;
+}
+@media (max-width: 850px) {
+  .capital_right {
+    width: 100%;
+    padding: 24rem;
+    border-radius: 16rem;
+  }
+}
+.capital_right h3 {
+  font-weight: 800;
+  font-size: 96rem;
+  line-height: 30%;
+  color: #FFFFFF;
+  transform: translateY(15rem);
+}
+@media (max-width: 850px) {
+  .capital_right h3 {
+    font-size: 48rem;
+    font-family: "Outfit", sans-serif;
+    opacity: 40%;
+  }
+}
+.capital_right p {
+  font-weight: 700;
+  font-size: 24rem;
+  line-height: 135%;
+  color: #FFFFFF;
+  padding-bottom: 32rem;
+  margin: 32rem 0;
+  border-bottom: 1px solid #E2E4EB;
+}
+@media (max-width: 850px) {
+  .capital_right p {
+    font-size: 18rem;
+    margin: 24rem 0;
+    padding-bottom: 24rem;
+  }
+}
+.capital_right span {
+  font-weight: 600;
+  font-size: 14rem;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+@media (max-width: 850px) {
+  .capital_right span {
+    font-size: 12rem;
+  }
+}
+
 .video {
   padding: 100rem 0;
   background: #000000;
