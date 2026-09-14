@@ -1,0 +1,62 @@
+// training
+.training {
+  padding: 60rem 0;
+  border-top: 3px solid $color-blue;
+  border-bottom: 3px solid $color-blue;
+
+  &_head {
+    margin-bottom: 60rem;
+
+    .title_icon {
+      background: #F5F6F8;
+      border: 1px solid #E2E4EB;
+      width: max-content;
+
+      @include media('md') {
+        display: none;
+      }
+
+      li {
+        font-weight: 700;
+        font-size: 12rem;
+        line-height: 100%;
+        color: $color-blue;
+
+        @include media('md') {
+          font-size: 10rem;
+        }
+      }
+
+      .line {
+        width: 1rem;
+        height: 10rem;
+        background: #E2E4EB;
+      }
+
+      span {
+        color: $color-black-2;
+      }
+    }
+
+    .section_title {
+      margin: 24rem 0;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 20rem;
+      line-height: 150%;
+      color: $color-black-2;
+    }
+  }
+
+
+  .end_text {
+    font-weight: 400;
+    font-size: 20rem;
+    line-height: 150%;
+    color: $color-black-2;
+    text-align: center;
+  }
+}
+// training
