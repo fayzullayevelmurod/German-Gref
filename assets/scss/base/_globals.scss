@@ -9,13 +9,19 @@ a {
   text-decoration: none;
   color: inherit;
   display: inline-block;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-blue;
+  }
 }
 
 img {
   max-width: 100%;
 }
 
-span, label {
+span,
+label {
   display: inline-block;
 }
 
@@ -78,7 +84,8 @@ body {
   font-display: swap;
 }
 
-input, textarea {
+input,
+textarea {
   outline: none;
   border: 0;
   background: transparent;
@@ -100,13 +107,21 @@ address {
   overflow: hidden;
 }
 
-ul, ol, dl {
+ul,
+ol,
+dl {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   padding: 0;
   margin: 0;
 }
@@ -116,7 +131,7 @@ p, h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   padding: 0 80px;
 
-  @include media('md') {
+  @include media("md") {
     padding: 0 16px;
   }
 }
@@ -133,6 +148,16 @@ p, h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   gap: 10rem;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+
+  &:hover {
+    background: #303073;
+    box-shadow: 0 8rem 18rem rgba(60, 60, 143, 0.2);
+    transform: translateY(-2rem);
+  }
 }
 
 .section_title {
@@ -145,7 +170,7 @@ p, h1, h2, h3, h4, h5, h6 {
     color: $color-blue;
   }
 
-  @include media('md') {
+  @include media("md") {
     font-size: 26rem;
   }
 }
@@ -158,11 +183,11 @@ p, h1, h2, h3, h4, h5, h6 {
   border-radius: 30rem;
   width: max-content;
 
-  span,li {
+  span,
+  li {
     font-weight: 700;
     font-size: 11rem;
     line-height: 100%;
     color: $color-blue;
   }
-  
 }

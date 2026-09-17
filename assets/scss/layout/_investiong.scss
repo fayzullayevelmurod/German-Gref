@@ -142,4 +142,189 @@
     }
   }
 }
+
+.investing_main {
+  padding: 60rem 0;
+  border-top: 3rem solid $color-blue;
+
+  @include media('md') {
+    padding: 48rem 0;
+  }
+
+  &_head {
+    max-width: 800rem;
+
+    p {
+      font-weight: 400;
+      font-size: 18rem;
+      line-height: 160%;
+      color: $color-black-2;
+    }
+  }
+
+  .title_icon {
+    background: #F5F6F8;
+    border: 1px solid #E2E4EB;
+    width: max-content;
+
+    li {
+      font-weight: 700;
+      font-size: 12rem;
+      line-height: 100%;
+      color: $color-blue;
+
+      @include media('md') {
+        font-size: 10rem;
+      }
+    }
+
+    .line {
+      width: 1rem;
+      height: 10rem;
+      background: #E2E4EB;
+    }
+  }
+
+  .section_title {
+    margin: 24rem 0;
+
+    @include media('md') {
+      margin: 12rem 0;
+    }
+  }
+
+  &_in {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 32rem;
+    margin: 80rem 0;
+
+    @include media('md') {
+      grid-template-columns: repeat(1,1fr);
+      margin: 32rem 0;
+      gap: 16rem;
+    }
+  }
+
+  &_block {
+    border-radius: 16rem;
+    background: #EDEDF5;
+    border: 1px solid $color-blue;
+    padding: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40rem;
+
+    @include media('md') {
+      padding: 24rem;
+      border-radius: 16rem;
+      gap: 20rem;
+    }
+
+    .icon {
+
+      @include media('md') {
+        border-radius: 8rem;
+        background: $color-white;
+        width: 36rem;
+        height: 36rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      img {
+        width: 36rem;
+        height: 36rem;
+
+        @include media('md') {
+          width: 24rem;
+          height: 24rem;
+        }
+      }
+    }
+
+    h3 {
+      font-weight: 800;
+      font-size: 24rem;
+      line-height: 100%;
+      color: $color-blue;
+
+      @include media('md') {
+        font-size: 18rem;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16rem;
+      line-height: 150%;
+      color: $color-black-2;
+
+      @include media('md') {
+        font-size: 12rem;
+      }
+    }
+
+    &.blue {
+      background: $color-blue;
+
+      .icon {
+        @include media('md') {
+          background: #FFFFFF20;
+        }
+      }
+
+      h3,p {
+        color: $color-white;
+      }
+    }
+
+    &:nth-child(1) {
+      grid-column: span 3;
+
+      @include media('md') {
+        grid-column: span 1;
+      }
+    }
+
+    &:nth-child(2) {
+      grid-column: span 2;
+
+      @include media('md') {
+        grid-column: span 1;
+      }
+    }
+
+    &:nth-child(3) {
+      grid-column: span 2;
+
+      @include media('md') {
+        grid-column: span 1;
+      }
+    }
+
+    &:nth-child(4) {
+      grid-column: span 3;
+
+      @include media('md') {
+        grid-column: span 1;
+      }
+    }
+  }
+
+  .btn-blue {
+    padding: 16rem 37rem;
+    height: 60rem;
+    font-size: 22rem;
+    margin: auto;
+    text-transform: uppercase;
+
+    @include media('md') {
+      width: 100%;
+      font-size: 16rem;
+      height: 50rem;
+    }
+  }
+}
 // investing

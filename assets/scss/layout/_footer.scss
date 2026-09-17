@@ -1,5 +1,5 @@
 .footer {
-  border-top: 3px solid #8F8F8F;
+  border-top: 3px solid #8f8f8f;
   padding: 40rem 0;
   background: $color-black;
 
@@ -9,7 +9,7 @@
     align-items: start;
     gap: 132rem;
 
-    @include media('md') {
+    @include media("md") {
       flex-direction: column;
       gap: 32rem;
       margin-bottom: 40rem;
@@ -17,7 +17,6 @@
   }
 
   &_block {
-
     &.footer_block_two {
       text-transform: uppercase;
     }
@@ -29,7 +28,7 @@
       color: $color-white;
       margin-bottom: 20rem;
 
-      @include media('md') {
+      @include media("md") {
         font-size: 16rem;
         margin-bottom: 16rem;
       }
@@ -40,7 +39,7 @@
       flex-direction: column;
       gap: 20rem;
 
-      @include media('md') {
+      @include media("md") {
         gap: 16rem;
       }
 
@@ -53,7 +52,11 @@
         align-items: center;
         gap: 12rem;
 
-        @include media('md') {
+        &:hover {
+          color: $color-blue;
+        }
+
+        @include media("md") {
           font-size: 14rem;
         }
 
@@ -71,7 +74,7 @@
     flex-direction: column;
     gap: 24px;
 
-    @include media('md') {
+    @include media("md") {
       gap: 16rem;
       align-items: start;
     }
@@ -83,7 +86,7 @@
       text-align: center;
       color: $color-white;
 
-      @include media('md') {
+      @include media("md") {
         text-align: left;
         font-size: 11rem;
         opacity: 60%;
@@ -98,7 +101,7 @@
       text-align: center;
       color: $color-white;
 
-      @include media('md') {
+      @include media("md") {
         font-size: 13rem;
         opacity: 80%;
       }
