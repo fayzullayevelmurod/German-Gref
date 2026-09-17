@@ -1649,19 +1649,16 @@ p, h1, h2, h3, h4, h5, h6 {
   border-top: 3px solid #3C3C8F;
   border-bottom: 3px solid #3C3C8F;
 }
-.training_head {
-  margin-bottom: 60rem;
+@media (max-width: 850px) {
+  .training {
+    padding: 48rem 0;
+  }
 }
 .training_head .title_icon {
   background: #F5F6F8;
   border: 1px solid #E2E4EB;
   width: -moz-max-content;
   width: max-content;
-}
-@media (max-width: 850px) {
-  .training_head .title_icon {
-    display: none;
-  }
 }
 .training_head .title_icon li {
   font-weight: 700;
@@ -1681,9 +1678,15 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .training_head .title_icon span {
   color: #1E1F22;
+  text-transform: uppercase;
 }
 .training_head .section_title {
   margin: 24rem 0;
+}
+@media (max-width: 850px) {
+  .training_head .section_title {
+    margin: 24rem 0 12rem 0;
+  }
 }
 .training_head p {
   font-weight: 400;
@@ -1691,12 +1694,92 @@ p, h1, h2, h3, h4, h5, h6 {
   line-height: 150%;
   color: #1E1F22;
 }
+.training_in {
+  padding: 32rem;
+  display: flex;
+  align-items: center;
+  gap: 24rem;
+  border-radius: 16rem;
+  background: #F5F6F8;
+  border: 1px solid #E2E4EB;
+  margin: 60rem 0;
+}
+@media (max-width: 850px) {
+  .training_in {
+    flex-direction: column;
+    gap: 12rem;
+    margin: 24rem 0;
+    padding: 16rem;
+  }
+}
+.training_block {
+  display: flex;
+  align-items: center;
+  gap: 16rem;
+}
+@media (max-width: 850px) {
+  .training_block {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+  }
+}
+.training_block span {
+  font-weight: 800;
+  font-size: 18rem;
+  line-height: 100%;
+  color: #000000;
+  padding: 12rem 24rem;
+  border-radius: 6rem;
+  background: #FFFFFF;
+  border: 1px solid #E2E4EB;
+}
+@media (max-width: 850px) {
+  .training_block span {
+    padding: 10rem;
+    font-size: 14rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+.training_block svg {
+  width: 18rem;
+  height: 18rem;
+}
+@media (max-width: 850px) {
+  .training_block svg {
+    transform: rotate(90deg);
+  }
+}
+.training .end_step {
+  padding: 12rem 24rem;
+  font-weight: 800;
+  font-size: 18rem;
+  line-height: 100%;
+  color: #FFFFFF;
+  background: #3C3C8F;
+  border-radius: 6rem;
+}
+@media (max-width: 850px) {
+  .training .end_step {
+    font-size: 16rem;
+    width: 100%;
+    text-align: center;
+  }
+}
 .training .end_text {
   font-weight: 400;
   font-size: 20rem;
   line-height: 150%;
   color: #1E1F22;
   text-align: center;
+}
+@media (max-width: 850px) {
+  .training .end_text {
+    font-size: 14rem;
+  }
 }
 
 .footer {

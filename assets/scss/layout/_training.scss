@@ -4,17 +4,16 @@
   border-top: 3px solid $color-blue;
   border-bottom: 3px solid $color-blue;
 
+  @include media('md') {
+    padding: 48rem 0;
+  }
+
   &_head {
-    margin-bottom: 60rem;
 
     .title_icon {
       background: #F5F6F8;
       border: 1px solid #E2E4EB;
       width: max-content;
-
-      @include media('md') {
-        display: none;
-      }
 
       li {
         font-weight: 700;
@@ -35,11 +34,16 @@
 
       span {
         color: $color-black-2;
+        text-transform: uppercase;
       }
     }
 
     .section_title {
       margin: 24rem 0;
+
+      @include media('md') {
+        margin: 24rem 0 12rem 0;
+      }
     }
 
     p {
@@ -50,6 +54,81 @@
     }
   }
 
+  &_in {
+    padding: 32rem;
+    display: flex;
+    align-items: center;
+    gap: 24rem;
+    border-radius: 16rem;
+    background: #F5F6F8;
+    border: 1px solid #E2E4EB;
+    margin: 60rem 0;
+
+    @include media('md') {
+      flex-direction: column;
+      gap: 12rem;
+      margin: 24rem 0;
+      padding: 16rem;
+    }
+  }
+
+  &_block {
+    display: flex;
+    align-items: center;
+    gap: 16rem;
+
+    @include media('md') {
+      flex-direction: column;
+      align-items: center;
+      gap: 4rem;
+      width: 100%;
+    }
+
+    span {
+      font-weight: 800;
+      font-size: 18rem;
+      line-height: 100%;
+      color: $color-black;
+      padding: 12rem 24rem;
+      border-radius: 6rem;
+      background: $color-white;
+      border: 1px solid #E2E4EB;
+
+      @include media('md') {
+        padding: 10rem;
+        font-size: 14rem;
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    svg {
+      width: 18rem;
+      height: 18rem;
+
+      @include media('md') {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  .end_step {
+    padding: 12rem 24rem;
+    font-weight: 800;
+    font-size: 18rem;
+    line-height: 100%;
+    color: $color-white;
+    background: $color-blue;
+    border-radius: 6rem;
+
+    @include media('md') {
+      font-size: 16rem;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
 
   .end_text {
     font-weight: 400;
@@ -57,6 +136,10 @@
     line-height: 150%;
     color: $color-black-2;
     text-align: center;
+
+    @include media('md') {
+      font-size: 14rem;
+    }
   }
 }
 // training
