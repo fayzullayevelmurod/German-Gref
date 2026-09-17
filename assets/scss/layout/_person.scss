@@ -1,0 +1,162 @@
+// person
+.person {
+  padding: 80rem 0;
+
+  @include media('md') {
+    padding: 48rem 0;
+  }
+
+  &_head {
+
+    .title_icon {
+      background: #F5F6F8;
+      border: 1px solid #E2E4EB;
+      width: max-content;
+
+      li {
+        font-weight: 700;
+        font-size: 12rem;
+        line-height: 100%;
+        color: $color-blue;
+
+        @include media('md') {
+          font-size: 10rem;
+        }
+      }
+
+      .line {
+        width: 1rem;
+        height: 10rem;
+        background: #E2E4EB;
+      }
+
+      span {
+        color: $color-black-2;
+        text-transform: uppercase;
+      }
+    }
+
+    .head_line {
+      width: 45rem;
+      height: 5rem;
+      border-radius: 3rem;
+      background-color: $color-blue;
+      margin: 16rem 0;
+    }
+  }
+
+  &_in {
+    margin-top: 16rem;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 64rem;
+
+    @include media('md') {
+      flex-direction: column-reverse;
+      gap: 24rem;
+    }
+  }
+
+  &_left {
+    display: flex;
+    flex-direction: column;
+    gap: 40rem;
+    max-width: 740rem;
+
+    @include media('md') {
+      gap: 32rem;
+    }
+  }
+
+  &_blocks {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24rem;
+
+    @include media('md') {
+      grid-template-columns: repeat(1,1fr);
+      gap: 12rem;
+    }
+  }
+
+  &_block {
+    padding: 32rem;
+    border-radius: 16rem;
+    background: #F5F6F8;
+    border: 1px solid $color-blue;
+
+    @include media('md') {
+      padding: 20rem;
+      border-radius: 8rem;
+    }
+
+    &.blue {
+      background: $color-blue;
+
+      span {
+        color: #FFFFFF99;
+      }
+
+      p {
+        color: $color-white;
+      }
+    }
+
+    span {
+      font-weight: 700;
+      font-size: 12rem;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: #8E919A;
+    }
+
+    p {
+      font-weight: 800;
+      font-size: 20rem;
+      line-height: 130%;
+      color: $color-black;
+      margin-top: 16rem;
+
+      @include media('md') {
+        font-size: 16rem;
+      }
+    }
+  }
+
+  &_text {
+    font-weight: 400;
+    font-size: 18rem;
+    line-height: 150%;
+    color: $color-black;
+
+    @include media('md') {
+      font-size: 14rem;
+    }
+  }
+
+  &_img {
+    border-radius: 16rem;
+    width: 480rem;
+    height: 600rem;
+    overflow: hidden;
+    transform: translateY(-75rem);
+
+    @include media('md') {
+      transform: translateY(0);
+      width: 100%;
+      height: 400rem;
+    }
+
+    @include media('sm') {
+      height: 320rem;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+// person
